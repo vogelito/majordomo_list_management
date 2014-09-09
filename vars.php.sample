@@ -5,6 +5,8 @@
   $key="Generate a safe key"; // See below
   $mailing_list_password="YOUR_MAILINGLIST_PASSWORD"; // Password for your mailing list
   $http_path="http://www.domain.com/handler.php"; // Http path to handler.php
+  $from = '"Some E-mail" <some-email@domain.com>';
+  $reply_to = "some@email.com";
 
   // Unlikely that you'll need to change these
   $majordomo_email="majordomo@listserv.hbs.edu"; // The e-mail address for majordomo

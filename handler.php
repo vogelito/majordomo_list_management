@@ -30,8 +30,8 @@
     exit();
   }
 
-  $headers = 'From: "Pizza Master" <***REMOVED***>' . "\r\n" .
-    'Reply-To: ***REMOVED***' . "\r\n" .
+  $headers = 'From: ' . $from . "\r\n" .
+    'Reply-To: ' . $reply_to . "\r\n" .
     'X-Mailer: PHP/' . phpversion();
 
   mail($send_to, $subject, $message, $headers);
