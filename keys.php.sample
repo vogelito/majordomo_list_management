@@ -1,0 +1,4 @@
+<?php
+  $seed="CHANGE_ME_TO_SOME_LONG_SET_OF_CHARACTERS_WHATEVER_YOU_WANT";
+  $mailing_list_password="YOUR_MAILINGLIST_PASSWORD";
+?>
