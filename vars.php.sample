@@ -2,10 +2,16 @@
   // Please change all these
   $club_name="Best Club"; // the name of your club
   $listserve="mbabestclub"; // the official name of your listserve
-  $key="CHANGE_ME_TO_SOME_LONG_SET_OF_CHARACTERS_WHATEVER_YOU_WANT"; // Just some seed for encryption
+  $key="Generate a safe key"; // See below
   $mailing_list_password="YOUR_MAILINGLIST_PASSWORD"; // Password for your mailing list
   $http_path="http://www.domain.com/handler.php"; // Http path to handler.php
 
   // Unlikely that you'll need to change these
   $majordomo_email="majordomo@listserv.hbs.edu"; // The e-mail address for majordomo
+
+  /* Generate a key with the following code and keep key as private as possible!:
+    $key_size = mcrypt_get_key_size(MCRYPT_RIJNDAEL_128, MCRYPT_MODE_CFB);
+    $encryption_key = openssl_random_pseudo_bytes($key_size, $strong);
+    echo base64_encode($encryption_key);
+  */
 ?>
