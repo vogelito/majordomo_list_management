@@ -1,4 +1,10 @@
 <?php
-  $seed="CHANGE_ME_TO_SOME_LONG_SET_OF_CHARACTERS_WHATEVER_YOU_WANT";
-  $mailing_list_password="YOUR_MAILINGLIST_PASSWORD";
+  // Please change all these
+  $club_name="Best Club"; // the name of your club
+  $listserve="mbabestclub"; // the official name of your listserve
+  $seed="CHANGE_ME_TO_SOME_LONG_SET_OF_CHARACTERS_WHATEVER_YOU_WANT"; // Just some seed for encryption
+  $mailing_list_password="YOUR_MAILINGLIST_PASSWORD"; // Password for your mailing list
+
+  // Unlikely that you'll need to change these
+  $majordomo_email="majordomo@listserv.hbs.edu"; // The e-mail address for majordomo
 ?>
