@@ -7,6 +7,11 @@
   $send_to = "";
   $message = "";
   $display = "";
+  $type = "";
+
+  if(isset($_POST["type"])) {
+    $type = $_POST["type"];
+  }
 
   if(isset($_POST["email"])) {
     // This is coming from the web-form
@@ -25,6 +30,10 @@
     $unsub_email = decode($e, $key, $iv);
     $message = "APPROVE	" . $mailing_list_password . "	UNSUBSCRIBE	" . $listserve . "	" . $unsub_email;
     $display = "Unsubscribe Request Sent";
+  } if($type == "add"){
+    $send_to = $majordomo_email;
+    $sub_email = $_POST["email"];
+    $message = "APPROVE " . $mailing_list_password . "  SUBSCRIBE     " . $listserve . "      " . $sub_email;
   } else {
     echo "An error occurred";
     exit();
