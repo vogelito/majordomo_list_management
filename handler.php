@@ -13,7 +13,7 @@
     $type = $_POST["type"];
   }
 
-  if(isset($_POST["email"])) {
+  if($type == "remove") {
     // This is coming from the web-form
     $send_to = $_POST["email"];
     $subject = "Unsubscribe from " . $club_name . "Mailing List";
@@ -30,7 +30,7 @@
     $unsub_email = decode($e, $key, $iv);
     $message = "APPROVE	" . $mailing_list_password . "	UNSUBSCRIBE	" . $listserve . "	" . $unsub_email;
     $display = "Unsubscribe Request Sent";
-  } if($type == "add"){
+  } elseif($type == "add"){
     $send_to = $majordomo_email;
     $sub_email = $_POST["email"];
     $message = "APPROVE " . $mailing_list_password . "  SUBSCRIBE     " . $listserve . "      " . $sub_email;
