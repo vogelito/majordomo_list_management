@@ -34,6 +34,7 @@
     $send_to = $majordomo_email;
     $sub_email = $_POST["email"];
     $message = "APPROVE " . $mailing_list_password . "  SUBSCRIBE     " . $listserve . "      " . $sub_email;
+    $display = "The following e-mail " . $sub_email . " has been added to " . $listserve;
   } else {
     echo "An error occurred";
     exit();
